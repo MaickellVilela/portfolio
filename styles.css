@@ -1,0 +1,115 @@
+:root {
+    --mv-brand-color: #3BB700;
+    --mv-text-color: rgba(0, 36, 89, 0.6);
+    --mv-bg-color: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: sans-serif, Arial;
+    color: var(--mv-text-color);
+    font-size: 16px;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--mv-bg-color);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+strong {
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100% - 8rem);
+    margin: 4rem 2rem;
+}
+
+.content {
+    margin-top: 2rem;
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.name {
+    color: var(--mv-brand-color);
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: auto;
+    margin-bottom: 5px;
+}
+
+h2, .title {
+    font-weight: 200;
+    font-size: 1.5rem;
+    line-height: 120%;
+}
+
+.title {
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    font-weight: 200;
+    font-size: 1.2rem;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.cta {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.cta-button {
+    background-color: var(--mv-brand-color);
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 32px;
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+}
+
+.cta-button span {
+    font-size: 0.8rem;
+    font-weight: 200;
+    opacity: 0.5;
+    display: block;
+}
+
+.cta small {
+    width: 100%;
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 200;
+    opacity: 0.6;
+    text-align: center;
+}
+
+li {
+    text-align: center;
+    margin-bottom: 1rem;
+}
