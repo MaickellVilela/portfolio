@@ -6,6 +6,7 @@
 
 * {
     box-sizing: border-box;
+    transition: all 0.3s;
 }
 
 html, body {
@@ -92,6 +93,7 @@ h2, .title {
     letter-spacing: 1px;
     margin-bottom: 4px;
     display: inline-block;
+    text-align: center;
 }
 
 .cta-button span {
@@ -168,5 +170,20 @@ li {
     ul {
         display: flex;
         justify-content: space-between;
+    }
+}
+
+
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 650px;
+    }
+}
+
+
+@media (orientation: portrait) and (max-width: 376px) and (min-height: 800px) {
+    .container {
+        max-height: 550px;
     }
 }
