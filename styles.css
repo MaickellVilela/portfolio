@@ -91,6 +91,7 @@ h2, .title {
     font-weight: bold;
     letter-spacing: 1px;
     margin-bottom: 4px;
+    display: inline-block;
 }
 
 .cta-button span {
@@ -112,4 +113,60 @@ h2, .title {
 li {
     text-align: center;
     margin-bottom: 1rem;
+}
+
+@media (min-width: 3760px) {
+    .name {
+        color: blue;
+    }
+
+    .cta-button {
+        width: auto;
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 900px) {
+
+    .container {
+        width: 70%;
+        height: 60%;
+    }
+
+    .content {
+        margin-top: 4rem;
+    }
+    .text-box, .cta {
+        margin-left: 2rem;
+    }
+
+    .name {
+        font-size: 2.5rem;
+    }
+
+    .job-title {
+        font-size: 1.8rem;
+    }
+
+    .cta {
+        padding: 0;
+    }
+
+    .cta-button {
+        width: auto;
+        text-align: center;
+        padding: 10px 64px;
+    }
+
+    .cta small {
+        text-align: left;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+    }
 }
