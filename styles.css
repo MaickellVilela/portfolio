@@ -135,10 +135,7 @@ li a:hover {
     color: white;
 }
 
-@media (min-width: 3760px) {
-    .name {
-        color: blue;
-    }
+@media (min-width: 376px) and (max-width: 899px) {
 
     .cta-button {
         width: auto;
