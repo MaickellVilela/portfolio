@@ -19,7 +19,6 @@ export default {
         "CSS Specialist",
         "UI Engineer",
         "Design System Manager",
-        "The generalist designer you need",
       ], // array of words to be typed
       delay: 3000, // delay in milliseconds before the next word is typed
       delayByLetter: 100, // delay in milliseconds before the next letter is typed
@@ -55,10 +54,7 @@ export default {
   position: absolute;
   top: 0;
   left: 0;
-  background: linear-gradient(to right, #00fffd, #207ef8, #d725ff);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  color: white;
   transition: all 0.5s ease-in-out;
 
   &::after {
@@ -70,8 +66,8 @@ export default {
     transform: translateX(100%);
     width: 2rem;
     height: 0.5rem;
-    background-color: #d725ff;
-    filter: drop-shadow(0 0 4px rgba(234, 0, 255, 0.6));
+    background-color: #99ff17;
+    filter: drop-shadow(0 0 4px rgba(#99ff17, 0.6));
     animation: blink 0.6s infinite;
     @keyframes blink {
       0% {
