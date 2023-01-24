@@ -36,3 +36,10 @@
     </div>
   </Container>
 </template>
+
+<script>
+// TODO: Add Downloads Section
+// TODO: Icons
+// TODO: Scroll indicator
+// TODO: Balance Square
+</script>
