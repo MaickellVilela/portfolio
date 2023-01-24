@@ -1,9 +1,6 @@
 <template>
   <div class="scene">
-    <h2
-      id="typewriter"
-      class="slide-text on-stage text-5xl md:text-7xl font-black"
-    >
+    <h2 id="typewriter" class="slide-text text-5xl md:text-7xl font-black">
       {{ currentWord }}
     </h2>
   </div>
@@ -54,6 +51,7 @@ export default {
   position: relative;
   display: inline;
   color: white;
+  white-space: nowrap;
   transition: all 0.5s ease-in-out;
 
   &::after {
@@ -68,6 +66,7 @@ export default {
     background-color: #99ff17;
     filter: drop-shadow(0 0 4px rgba(#99ff17, 0.6));
     animation: blink 0.6s infinite;
+    border-radius: 3px;
     @keyframes blink {
       0% {
         opacity: 0;
@@ -86,6 +85,5 @@ export default {
   width: 100%;
   display: block;
   position: relative;
-  height: 160px;
 }
 </style>

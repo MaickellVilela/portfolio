@@ -6,8 +6,7 @@
 }
 
 html {
-  background-color: #0C0E13;
-  color: #fff;
+  @apply text-foreground bg-background;
 }
 
 // TODO: Image Background

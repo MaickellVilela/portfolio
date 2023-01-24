@@ -3,10 +3,9 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
   theme: {
     colors: {
-      white: "#FFF",
-      dark: "#0C0E13",
-      green: "#52FF00",
-      // TODO: Tailwind Config Colors
+      foreground: "#FFF",
+      background: "#070B10",
+      accent: "#52FF00",
     },
     fontSize: {
       ...defaultTheme.fontSize,
