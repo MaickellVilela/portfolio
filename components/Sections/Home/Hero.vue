@@ -1,31 +1,38 @@
 <template>
-  <Container class="h-screen flex justify-center items-center">
-    <div class="w-full">
-      <h1 class="font-light text-4xl mb-4">Maickell Vilela</h1>
+  <section class="w-full h-screen flex justify-center items-center">
+    <Container class="">
+      <h1 class="font-light text-4xl mb-8">Maickell Vilela</h1>
 
       <SkillSlider />
 
-      <div class="">
-        <p class="text-accent font-bold">open to work</p>
-        <p class="text-xs font-light">full-time</p>
-        <p class="text-xs font-light">freelance</p>
+      <div class="mt-8">
+        <p class="text-accent text-lg font-bold">open to work</p>
+        <p class="text-sm font-light">
+          freelance &nbsp;&nbsp;|&nbsp;&nbsp; part-time
+          &nbsp;&nbsp;|&nbsp;&nbsp; full-time
+        </p>
       </div>
-      <a
-        href="https://www.behance.net/maickellvilela"
-        target="_blank"
-        class="bg-foreground text-black font-bold py-2 px-4 rounded mr-4"
-      >
-        Go to portfolio
-      </a>
-      <a
-        href="https://drive.google.com/file/d/1x6eQ2kQXzvY8V8Wd2u0FVjKsYvZ8Vw0x/view?usp=sharing"
-        target="_blank"
-        class="bg-foreground text-black font-bold py-2 px-4 rounded"
-      >
-        Download CV
-      </a>
-    </div>
-  </Container>
+      <!-- html space charactere -->
+
+      <div class="downloads pt-16">
+        <!-- <a
+          href="https://www.behance.net/maickellvilela"
+          target="_blank"
+          class="bg-foreground text-black font-bold py-2 px-4 rounded mr-4"
+        >
+          Go to portfolio
+        </a> -->
+
+        <a
+          href="https://drive.google.com/file/d/1x6eQ2kQXzvY8V8Wd2u0FVjKsYvZ8Vw0x/view?usp=sharing"
+          target="_blank"
+          class="block text-foreground font-light py-2 px-4"
+        >
+          Resume Download
+        </a>
+      </div>
+    </Container>
+  </section>
 </template>
 
 <script>
