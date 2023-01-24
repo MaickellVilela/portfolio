@@ -1,5 +1,7 @@
 <template>
-  <section class="w-full h-screen flex justify-center items-center">
+  <section
+    class="hero-backgorund w-full h-screen flex justify-center items-center"
+  >
     <Container class="">
       <h1 class="font-light text-4xl mb-8">Maickell Vilela</h1>
 
@@ -40,3 +42,14 @@
 // TODO: Icons
 // TODO: Scroll indicator
 </script>
+
+<style lang="scss" scoped>
+.hero-backgorund {
+  // TODO: Optimize image;
+  background-image: url("~/assets/images/background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  mix-blend-mode: screen;
+}
+</style>
