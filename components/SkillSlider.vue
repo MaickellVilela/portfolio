@@ -51,9 +51,8 @@ export default {
 
 <style lang="scss" scoped>
 .slide-text {
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
+  display: inline;
   color: white;
   transition: all 0.5s ease-in-out;
 

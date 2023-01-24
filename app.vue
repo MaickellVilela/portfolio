@@ -6,12 +6,10 @@
 
 <script>
 import Hero from "~/components/Sections/Home/Hero.vue";
-import Downloads from "~/components/Sections/Home/Downloads.vue";
 
 export default {
   components: {
     Hero,
-    Downloads,
   },
 };
 </script>

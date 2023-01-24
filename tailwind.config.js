@@ -14,9 +14,14 @@ module.exports = {
     },
     container: {
       center: true,
-      padding: {
-        DEFAULT: "1.5rem",
-        lg: "5rem",
+
+      // or have default horizontal padding
+      padding: "2rem",
+
+      // default breakpoints but with 40px removed
+      screens: {
+        sm: "836px",
+        DEFAULT: "836px",
       },
     },
   },
