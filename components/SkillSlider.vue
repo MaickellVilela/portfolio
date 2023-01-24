@@ -48,25 +48,14 @@ export default {
 
 <style lang="scss" scoped>
 .slide-text {
-  position: relative;
-  display: inline;
-  color: white;
-  white-space: nowrap;
+  @apply text-foreground whitespace-nowrap inline relative;
   transition: all 0.5s ease-in-out;
 
   &::after {
     content: "";
-    position: absolute;
-    display: block;
-    right: 0;
-    bottom: 0;
-    transform: translateX(100%);
-    width: 2rem;
-    height: 0.5rem;
-    background-color: #99ff17;
+    @apply absolute block right-0 bottom-0 transform translate-x-full w-8 h-2 bg-accent rounded-sm;
     filter: drop-shadow(0 0 4px rgba(#99ff17, 0.6));
     animation: blink 0.6s infinite;
-    border-radius: 3px;
     @keyframes blink {
       0% {
         opacity: 0;
@@ -82,8 +71,6 @@ export default {
 }
 
 .scene {
-  width: 100%;
-  display: block;
-  position: relative;
+  @apply w-full block relative;
 }
 </style>
