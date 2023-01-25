@@ -1,9 +1,9 @@
 <template>
   <a
     :href="to"
+    :target="targetValue"
     class="custom-link"
     :class="[type, external ? 'external' : '']"
-    :target="[external ? '_blank' : '_self']"
   >
     <i class="icon" :class="icon" />
     <span class="label"><slot></slot></span>
@@ -28,6 +28,11 @@ export default {
     external: {
       type: Boolean,
       default: false,
+    },
+  },
+  computed: {
+    targetValue() {
+      return this.external ? "_blank" : "_self";
     },
   },
 };

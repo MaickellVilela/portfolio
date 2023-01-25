@@ -17,32 +17,32 @@
 
       <div class="downloads pt-16">
         <CustomLink
-          to="https://www.behance.net/maickellvilela"
+          to="mailto:maickell@me.com?subject=From website&body=Hello Maickell!"
           icon="email"
           class="mb-4"
           >Contact
         </CustomLink>
-        <CustomLink to="https://www.behance.net/maickellvilela" icon="download"
+        <CustomLink
+          to="https://drive.google.com/file/d/1RtXJJ-ONCKQH_YwVUFVmzuNMrrlUEzvL/view?usp=sharing"
+          external
+          icon="download"
           >Resume Download
         </CustomLink>
 
         <!-- href="https://drive.google.com/file/d/1x6eQ2kQXzvY8V8Wd2u0FVjKsYvZ8Vw0x/view?usp=sharing" -->
       </div>
       <div class="mt-12 flex gap-8">
-        <CustomLink
-          to="https://www.behance.net/maickellvilela"
-          external
-          icon="dribbble"
+        <CustomLink to="https://dribbble.com/maickell_" external icon="dribbble"
           >Dribbble
         </CustomLink>
         <CustomLink
-          to="https://www.behance.net/maickellvilela"
+          to="https://www.linkedin.com/in/mvilela/"
           external
           icon="linkedin"
           >Linkedin
         </CustomLink>
         <CustomLink
-          to="https://www.behance.net/maickellvilela"
+          to="https://github.com/MaickellVilela"
           external
           icon="github"
           >GitHub
