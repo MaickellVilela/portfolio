@@ -14,16 +14,14 @@
           &nbsp;&nbsp;|&nbsp;&nbsp; full-time
         </p>
       </div>
-      <!-- html space charactere -->
 
       <div class="downloads pt-16">
-        <!-- <a
-          href="https://www.behance.net/maickellvilela"
-          target="_blank"
-          class="bg-foreground text-black font-bold py-2 px-4 rounded mr-4"
-        >
-          Go to portfolio
-        </a> -->
+        <CustomLink
+          to="https://www.behance.net/maickellvilela"
+          external
+          icon="dribbble"
+          >Dribbble
+        </CustomLink>
 
         <a
           href="https://drive.google.com/file/d/1x6eQ2kQXzvY8V8Wd2u0FVjKsYvZ8Vw0x/view?usp=sharing"
