@@ -28,7 +28,7 @@
 
         <!-- href="https://drive.google.com/file/d/1x6eQ2kQXzvY8V8Wd2u0FVjKsYvZ8Vw0x/view?usp=sharing" -->
       </div>
-      <div class="mt-8 flex gap-8">
+      <div class="mt-12 flex gap-8">
         <CustomLink
           to="https://www.behance.net/maickellvilela"
           external
@@ -40,6 +40,12 @@
           external
           icon="linkedin"
           >Linkedin
+        </CustomLink>
+        <CustomLink
+          to="https://www.behance.net/maickellvilela"
+          external
+          icon="github"
+          >GitHub
         </CustomLink>
       </div>
     </Container>

@@ -54,7 +54,7 @@ export default {
   min-width: 0;
 
   .icon {
-    @apply mr-2 block;
+    @apply mr-2 block transition-all duration-300 ease-in-out;
     @include icon(20px);
   }
 
@@ -87,16 +87,17 @@ export default {
     @apply absolute block w-0 h-[2px] bg-accent bottom-0 left-0 transform translate-y-0.5 transition-all duration-300 ease-in-out;
   }
 
-  :hover {
-    @apply text-accent;
+  &:hover {
+    .icon {
+      filter: invert(0.5) sepia(1) saturate(300%) hue-rotate(65deg)
+        brightness(150%);
+    }
 
-    // .icon {
-    //   background: var(--accent);
-    //   fill: var(--accent);
-    // }
-
-    &.label::before {
-      @apply w-full;
+    .label {
+      @apply text-accent;
+      &::before {
+        @apply w-full;
+      }
     }
   }
 
