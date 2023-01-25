@@ -34,6 +34,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@mixin icon($icon, $size: 14px) {
+  background-image: url("~/assets/images/#{$icon}.svg");
+  @apply block bg-no-repeat bg-center bg-cover;
+  width: $size;
+  height: $size;
+}
+
 .custom-link {
   @apply relative;
 
@@ -56,12 +63,8 @@ export default {
 
   &.external::after {
     content: "";
-    @apply absolute block w-[14px] h-[14px] text-accent top-0 -right-1 transform translate-x-full translate-y-3 opacity-0 transition-all duration-300 ease-in-out;
-
-    background-image: url("~/assets/images/external-link.svg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    @apply absolute text-accent top-0 -right-1 transform translate-x-full translate-y-3 opacity-0 transition-all duration-300 ease-in-out;
+    @include icon("external-link");
   }
 
   &.external:hover::after {
