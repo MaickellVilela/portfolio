@@ -18,18 +18,29 @@
       <div class="downloads pt-16">
         <CustomLink
           to="https://www.behance.net/maickellvilela"
+          icon="email"
+          class="mb-4"
+          >Contact
+        </CustomLink>
+        <CustomLink to="https://www.behance.net/maickellvilela" icon="download"
+          >Resume Download
+        </CustomLink>
+
+        <!-- href="https://drive.google.com/file/d/1x6eQ2kQXzvY8V8Wd2u0FVjKsYvZ8Vw0x/view?usp=sharing" -->
+      </div>
+      <div class="mt-8 flex gap-8">
+        <CustomLink
+          to="https://www.behance.net/maickellvilela"
           external
           icon="dribbble"
           >Dribbble
         </CustomLink>
-
-        <a
-          href="https://drive.google.com/file/d/1x6eQ2kQXzvY8V8Wd2u0FVjKsYvZ8Vw0x/view?usp=sharing"
-          target="_blank"
-          class="block text-foreground font-light py-2 px-4"
-        >
-          Resume Download
-        </a>
+        <CustomLink
+          to="https://www.behance.net/maickellvilela"
+          external
+          icon="linkedin"
+          >Linkedin
+        </CustomLink>
       </div>
     </Container>
   </section>
