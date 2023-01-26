@@ -1,11 +1,11 @@
 {
   "private": true,
   "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "build": "nuxi generate",
+    "dev": "nuxi dev",
+    "start": "nuxi preview",
+    "postinstall": "nuxt prepare",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^6.2.0",
@@ -15,7 +15,9 @@
     "sass-loader": "^13.2.0"
   },
   "dependencies": {
+    "@nuxt/bridge": "^0.10.1",
     "@vueuse/nuxt": "^9.11.1",
+    "gh-pages": "^5.0.0",
     "nuxi": "^3.0.0"
   }
 }
