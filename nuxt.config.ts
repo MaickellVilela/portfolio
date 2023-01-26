@@ -5,10 +5,10 @@ export default defineNuxtConfig({
   modules: ['@nuxtjs/tailwindcss', '@vueuse/nuxt'],
   ssr: false,
   router: {
-    base: '/portfolio/' // base: '/<repository>/'
+    base: '/' // base: '/<repository>/'
   },
   build: {
-    publicPath: 'https://maickellvilela.github.io/portfolio/_nuxt/'
+    publicPath: '/portfolio/_nuxt/'
   }
 })
 
