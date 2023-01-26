@@ -3,8 +3,9 @@ import { defineNuxtConfig } from '@nuxt/bridge'
 
 export default defineNuxtConfig({
   modules: ['@nuxtjs/tailwindcss', '@vueuse/nuxt'],
+  ssr: false,
   router: {
-    base: '/<repository>/' // base: '/<repository>/'
+    base: '/portfolio/' // base: '/<repository>/'
   }
 })
 
