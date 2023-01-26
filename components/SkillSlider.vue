@@ -3,6 +3,7 @@
     <h2 id="typewriter" class="slide-text text-5xl md:text-7xl font-black">
       {{ currentWord }}
     </h2>
+    <span class="cursor"></span>
   </div>
 </template>
 
@@ -56,22 +57,21 @@ export default {
     @apply absolute block w-screen h-full -left-8 top-0 transform -translate-x-full bg-accent rounded-lg;
     filter: drop-shadow(0 0 32px rgba(#99ff17, 0.6));
   }
+}
 
-  &::after {
-    content: "";
-    @apply absolute block right-0 bottom-0 transform translate-x-full w-8 h-2 bg-accent rounded-sm;
-    filter: drop-shadow(0 0 8px rgba(#99ff17, 0.6));
-    animation: blink 0.6s infinite;
-    @keyframes blink {
-      0% {
-        opacity: 0;
-      }
-      50% {
-        opacity: 1;
-      }
-      100% {
-        opacity: 0;
-      }
+.cursor {
+  @apply inline-block transform translate-y-full w-8 h-2 bg-accent rounded-sm;
+  filter: drop-shadow(0 0 8px rgba(#99ff17, 0.6));
+  animation: blink 0.6s infinite;
+  @keyframes blink {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
     }
   }
 }
