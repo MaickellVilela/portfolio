@@ -6,6 +6,9 @@ export default defineNuxtConfig({
   ssr: false,
   router: {
     base: '/portfolio/' // base: '/<repository>/'
+  },
+  build: {
+    publicPath: 'https://maickellvilela.github.io/portfolio/_nuxt/'
   }
 })
 
