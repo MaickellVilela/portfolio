@@ -55,13 +55,13 @@ export default {
   &::before {
     content: "";
     @apply absolute block w-screen h-full -left-8 top-0 transform -translate-x-full bg-accent rounded-lg;
-    filter: drop-shadow(0 0 32px rgba(#99ff17, 0.6));
+    filter: drop-shadow(0 0 32px rgba(var(--accent), 0.6));
   }
 }
 
 .cursor {
   @apply inline-block transform translate-y-full w-8 h-2 bg-accent rounded-sm;
-  filter: drop-shadow(0 0 8px rgba(#99ff17, 0.6));
+  filter: drop-shadow(0 0 8px rgba(var(--accent), 0.6));
   animation: blink 0.6s infinite;
   @keyframes blink {
     0% {
