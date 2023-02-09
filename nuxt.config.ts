@@ -3,10 +3,10 @@ import { defineNuxtConfig } from '@nuxt/bridge'
 
 export default defineNuxtConfig({
   app: {
-    baseURL: '/portfolio/', // base: '/<repository>/'
+    baseURL: '/portfolio/',
     buildAssetsDir: 'assets',
   },
   ssr: false,
-  modules: ['@nuxtjs/tailwindcss', '@vueuse/nuxt'],
+  modules: ['@nuxtjs/tailwindcss', '@vueuse/nuxt', '@nuxt/content',],
 })
 

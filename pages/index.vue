@@ -1,8 +1,7 @@
 <template>
-  <div>
-    <!-- <Hero /> -->
-    <NuxtPage></NuxtPage>
-  </div>
+  <main>
+    <Hero />
+  </main>
 </template>
 
 <script>
@@ -14,7 +13,3 @@ export default {
   },
 };
 </script>
-
-<style lang="sass">
-@import "~/assets/style/main.scss"
-</style>

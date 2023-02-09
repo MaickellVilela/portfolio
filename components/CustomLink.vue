@@ -50,37 +50,19 @@ export default {
 }
 
 .custom-link {
-  @apply relative;
-
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  width: fit-content;
-  min-width: 0;
+  @apply relative flex items-center justify-start min-w-0 w-fit;
 
   .icon {
     @apply mr-2 block transition-all duration-300 ease-in-out;
     @include icon(20px);
   }
 
-  .dribbble {
-    @include icon-src("dribbble");
-  }
+  $icons: (dribbble, email, github, linkedin, download);
 
-  .email {
-    @include icon-src("email");
-  }
-
-  .github {
-    @include icon-src("github");
-  }
-
-  .linkedin {
-    @include icon-src("linkedin");
-  }
-
-  .download {
-    @include icon-src("download");
+  @each $icon in $icons {
+    .#{$icon} {
+      @include icon-src($icon);
+    }
   }
 
   .label {
@@ -94,7 +76,7 @@ export default {
 
   &:hover {
     .icon {
-      filter: invert(0.5) sepia(1) saturate(300%) hue-rotate(65deg)
+      filter: invert(0.5) sepia(1) saturate(300%) hue-rotate(52deg)
         brightness(150%);
     }
 
@@ -114,7 +96,8 @@ export default {
   }
 
   &.external:hover::after {
-    @apply translate-x-full translate-y-0 opacity-100;
+    @apply translate-x-full -translate-y-1 opacity-30;
+    filter: saturate(0);
   }
 }
 </style>
