@@ -1,9 +1,8 @@
 <template>
   <div class="scene">
     <h2 id="typewriter" class="slide-text text-5xl md:text-7xl font-black">
-      {{ currentWord }}
+      {{ currentWord }}<span class="cursor"></span>
     </h2>
-    <span class="cursor"></span>
   </div>
 </template>
 
@@ -54,14 +53,14 @@ export default {
 
   &::before {
     content: "";
-    @apply absolute block w-screen h-full -left-8 top-0 transform -translate-x-full bg-accent rounded-lg;
-    filter: drop-shadow(0 0 32px rgba(var(--accent), 0.6));
+    @apply absolute block w-screen h-2 -left-8 top-1/2 transform -translate-x-full -translate-y-1/2 bg-accent rounded-sm;
+    filter: drop-shadow(0 0 8px theme("colors.accent" / 50%));
   }
 }
 
 .cursor {
   @apply inline-block transform translate-y-full w-8 h-2 bg-accent rounded-sm;
-  filter: drop-shadow(0 0 8px rgba(var(--accent), 0.6));
+  filter: drop-shadow(0 0 8px theme("colors.accent" / 50%));
   animation: blink 0.6s infinite;
   @keyframes blink {
     0% {

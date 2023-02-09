@@ -3,7 +3,7 @@
     class="hero-backgorund w-full h-screen flex justify-center items-center"
   >
     <Container class="">
-      <h1 class="font-light text-4xl mb-8">Maickell Vilela **Testing**</h1>
+      <h1 class="font-light text-4xl mb-8">Maickell Vilela</h1>
 
       <SkillSlider />
 
