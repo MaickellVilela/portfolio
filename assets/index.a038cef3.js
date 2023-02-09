@@ -1,0 +1,1 @@
+import{O as o,S as n,o as t,J as s,R as r,z as c}from"./entry.3427b107.js";const a={components:{Hero:n}};function p(_,m,l,d,f,i){const e=c("Hero");return t(),s("main",null,[r(e)])}const x=o(a,[["render",p]]);export{x as default};
