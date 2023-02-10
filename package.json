@@ -12,7 +12,8 @@
     "@tailwindcss/typography": "^0.5.9",
     "nuxt": "^3.0.0",
     "sass": "^1.57.1",
-    "sass-loader": "^13.2.0"
+    "sass-loader": "^13.2.0",
+    "vue-gtag-next": "^1.14.0"
   },
   "dependencies": {
     "@nuxt/bridge": "^0.10.1",
