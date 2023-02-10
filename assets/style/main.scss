@@ -1,15 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 
 * {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   text-rendering: geometricPrecision;
 }
 
 html {
-  @apply text-foreground bg-background;
+  @apply text-foreground bg-darkBackground;
 }
 
 // TODO: Mobile Grid
 // TODO: Link component styles
 // TODO: Desktop First media query
-

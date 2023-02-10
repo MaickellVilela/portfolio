@@ -26,7 +26,7 @@
           to="https://drive.google.com/file/d/1RtXJJ-ONCKQH_YwVUFVmzuNMrrlUEzvL/view?usp=sharing"
           external
           icon="download"
-          >Resume Download
+          >PDF Resume Download
         </CustomLink>
 
         <!-- href="https://drive.google.com/file/d/1x6eQ2kQXzvY8V8Wd2u0FVjKsYvZ8Vw0x/view?usp=sharing" -->
