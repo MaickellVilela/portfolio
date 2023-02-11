@@ -1,9 +1,9 @@
 <template>
-  <section
-    class="hero-backgorund w-full h-screen flex justify-center items-center"
-  >
+  <section class="hero-backgorund">
     <Container class="">
-      <h1 class="font-light text-4xl mb-8">Maickell Vilela</h1>
+      <h1 class="font-light text-2xl md:text-4xl mb-2 md:mb-4">
+        Maickell Vilela
+      </h1>
 
       <SkillSlider />
 
@@ -31,7 +31,7 @@
 
         <!-- href="https://drive.google.com/file/d/1x6eQ2kQXzvY8V8Wd2u0FVjKsYvZ8Vw0x/view?usp=sharing" -->
       </div>
-      <div class="mt-12 flex gap-8">
+      <div class="mt-12 flex flex-col md:flex-row gap-8">
         <CustomLink to="https://dribbble.com/maickell_" external icon="dribbble"
           >Dribbble
         </CustomLink>
@@ -54,7 +54,6 @@
 
 <script>
 // TODO: Add Downloads Section
-// TODO: Icons
 // TODO: Scroll indicator
 </script>
 
@@ -62,9 +61,7 @@
 .hero-backgorund {
   // TODO: Optimize image;
   background-image: url("~/assets/images/background.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  mix-blend-mode: screen;
+  @apply bg-cover bg-center bg-no-repeat mix-blend-screen w-full min-h-screen flex justify-center items-center;
+  min-height: -webkit-fill-available;
 }
 </style>
