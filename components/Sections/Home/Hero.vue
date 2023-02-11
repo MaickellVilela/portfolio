@@ -28,8 +28,6 @@
           icon="download"
           >PDF Resume Download
         </CustomLink>
-
-        <!-- href="https://drive.google.com/file/d/1x6eQ2kQXzvY8V8Wd2u0FVjKsYvZ8Vw0x/view?usp=sharing" -->
       </div>
       <div class="mt-12 flex flex-col md:flex-row gap-8">
         <CustomLink to="https://dribbble.com/maickell_" external icon="dribbble"
