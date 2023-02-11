@@ -1,8 +1,5 @@
 <template>
-  <div>
-    <!-- <Hero /> -->
-    <NuxtPage></NuxtPage>
-  </div>
+  <NuxtPage class="min-h-hack"></NuxtPage>
 </template>
 
 <script>

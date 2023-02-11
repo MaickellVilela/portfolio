@@ -61,7 +61,8 @@
 .hero-backgorund {
   // TODO: Optimize image;
   background-image: url("~/assets/images/background.png");
-  @apply bg-cover bg-center bg-no-repeat mix-blend-screen w-full min-h-screen flex justify-center items-center;
+  @apply bg-cover bg-center bg-no-repeat mix-blend-screen w-full flex justify-center items-center;
+  min-height: 100vh;
   min-height: -webkit-fill-available;
 }
 </style>

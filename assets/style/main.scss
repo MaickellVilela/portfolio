@@ -7,6 +7,13 @@
 
 html {
   @apply text-foreground bg-darkBackground;
+  min-height: 100vh;
+  height: -webkit-fill-available;
+}
+
+body,
+.min-h-hack,
+#__nuxt {
   height: -webkit-fill-available;
 }
 
