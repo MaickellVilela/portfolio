@@ -1,9 +1,7 @@
 <template>
-  <div class="scene">
-    <h2 id="typewriter" class="slide-text text-5xl md:text-7xl font-black">
-      {{ currentWord }}<span class="cursor"></span>
-    </h2>
-  </div>
+  <h2 id="typewriter" class="slide-text">
+    {{ currentWord }}<span class="cursor"></span>
+  </h2>
 </template>
 
 <script>
@@ -11,9 +9,9 @@ export default {
   data: function () {
     return {
       words: [
-        "Product Designer",
-        "UX Designer",
-        "CSS Specialist",
+        // "Product Designer",
+        // "UX Designer",
+        // "CSS Specialist",
         "UI Engineer",
         "Design System Manager",
       ], // array of words to be typed
@@ -48,18 +46,18 @@ export default {
 
 <style lang="scss" scoped>
 .slide-text {
-  @apply text-foreground whitespace-nowrap inline relative;
+  @apply block text-foreground whitespace-normal md:whitespace-nowrap relative h-[72px] md:h-auto text-4xl md:text-7xl font-black;
   transition: all 0.5s ease-in-out;
 
   &::before {
     content: "";
-    @apply absolute block w-screen h-2 -left-8 top-1/2 transform -translate-x-full -translate-y-1/2 bg-accent rounded-sm;
+    @apply absolute block w-screen h-1 md:h-2 md:-left-8 top-1/2 transform -translate-x-full -translate-y-1/2 bg-accent rounded-sm;
     filter: drop-shadow(0 0 8px theme("colors.accent" / 50%));
   }
 }
 
 .cursor {
-  @apply inline-block transform translate-y-full w-8 h-2 bg-accent rounded-sm;
+  @apply inline-block transform translate-y-full w-4 h-1 md:w-8 md:h-2 bg-accent rounded-sm;
   filter: drop-shadow(0 0 8px theme("colors.accent" / 50%));
   animation: blink 0.6s infinite;
   @keyframes blink {
@@ -73,9 +71,5 @@ export default {
       opacity: 0;
     }
   }
-}
-
-.scene {
-  @apply w-full block relative;
 }
 </style>
