@@ -132,10 +132,10 @@
         <div class="card card-style2 design-system center-content">
           <div class="content">
             <h4 class="text-accent font-bold text-sm md:text-base">
-              Design System
+              Design System Specialist
             </h4>
             <p class="text-accent text-xs md:text-sm">
-              specialist. 10+ design systems built from scratch
+              10+ design systems built from scratch
             </p>
           </div>
         </div>
