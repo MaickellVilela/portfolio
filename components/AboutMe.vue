@@ -1,10 +1,10 @@
 <template>
-  <Container>
+  <Container id="aboutMeSection">
     <section class="py-16 md:py-32">
       <div class="flex gap-4 md:gap-8">
         <img
           class="rounded-lg w-1/2 md:w-1/4"
-          src="@/assets/images/Maickell Vilela Profile Picture.jpg"
+          src="@/assets/images/MaickellVilelaProfilePicture.jpg"
           alt=""
         />
         <div class="personal-bio">

@@ -47,10 +47,10 @@
         </CustomLink>
       </div>
     </Container>
-    <div class="scroll-indicator">
+    <a href="#aboutMeSection" class="scroll-indicator">
       scroll
       <div class="scroll-arrow"></div>
-    </div>
+    </a>
   </section>
 </template>
 
