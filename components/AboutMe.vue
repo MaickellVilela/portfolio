@@ -12,8 +12,10 @@
           <p class="title text-accent text-sm">
             <span>Senior UX/UI Designer</span>
             <span class="hidden md:inline-block">&nbsp;|&nbsp;</span>
+            <br class="md:hidden inline-block" />
             <span>Frontend Developer</span>
             <span class="hidden md:inline-block">&nbsp;|&nbsp;</span>
+            <br class="md:hidden inline-block" />
             <span>Design Systems specialist</span>
           </p>
           <BioText class="hidden md:block" />

@@ -1,8 +1,12 @@
-export default {
-  setup() {
-    const currentYear = new Date().getFullYear();
-    const yearDifference = computed(() => currentYear - 2008);
+export default function () {
+  const UXDesignStartingYear = 2008;
+  const FrontendDevStartingYear = 2015;
+  const currentYear = new Date().getFullYear();
 
-    return { yearDifference };
-  },
-};
+  const UXDesignExperience = computed(() => currentYear - UXDesignStartingYear);
+  const FrontendDevExperience = computed(
+    () => currentYear - FrontendDevStartingYear
+  );
+
+  return { UXDesignExperience, FrontendDevExperience };
+}

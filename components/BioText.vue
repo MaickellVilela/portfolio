@@ -1,8 +1,9 @@
 <template>
   <div class="bio text-base font-light mt-4">
     <p class="mb-2">
-      I'm a UX/UI designer with over {{ yearDifference }} years of experience in
-      creating enterprise-level software interfaces and user experiences.
+      I'm a UX/UI designer with over {{ UXDesignExperience }} years of
+      experience in creating enterprise-level software interfaces and user
+      experiences.
     </p>
     <p class="mb-2">
       My expertise includes designing for e-commerce, leading multidisciplinary
@@ -17,13 +18,6 @@
   </div>
 </template>
 
-<script lang="ts">
-export default {
-  setup() {
-    const currentYear = new Date().getFullYear();
-    const yearDifference = computed(() => currentYear - 2008);
-
-    return { yearDifference };
-  },
-};
+<script setup lang="ts">
+const { UXDesignExperience } = yearsOfExperience();
 </script>
