@@ -3,76 +3,171 @@
     <section>
       <h3 class="text-foreground opacity-60">Highlights</h3>
       <div class="cards-grid">
-        <div class="card card-style1 design-xp">
-          <h4
-            class="text-darkBackground font-extrabold text-center leading-tight italic text-[44px]"
-          >
-            15+
-            <span class="text-sm font-bold -ml-4">years</span>
-          </h4>
-          <p class="text-darkBackground font-light text-sm text-center">
-            as a UX/UI Designer
-          </p>
+        <div class="card card-style1 design-xp center-content">
+          <div class="content">
+            <h4
+              class="text-darkBackground font-extrabold text-center leading-tight italic text-[44px]"
+            >
+              15+
+              <span class="text-sm font-bold -ml-4">years</span>
+            </h4>
+            <p class="text-darkBackground font-light text-sm text-center">
+              as a UX/UI Designer
+            </p>
+          </div>
         </div>
         <div class="card card-style2 industries">
-          <h4 class="text-foreground opacity-60 font-bold italic text-sm">
-            Top Industries
-          </h4>
-          <ol class="text-accent text-sm leading-6 list-disc ml-5">
-            <li>Food Delivery</li>
-            <li>Telecom</li>
-            <li>Real Estate</li>
-            <li>E-commerce</li>
-            <li>SaaS</li>
-            <li>Health Insurance</li>
-            <li>Transportations</li>
-          </ol>
+          <div class="content">
+            <h4 class="text-foreground opacity-60 font-bold italic text-sm">
+              Top Industries
+            </h4>
+            <ol class="text-accent text-sm leading-6 list-disc ml-5">
+              <li>Food Delivery</li>
+              <li>Telecom</li>
+              <li>Real Estate</li>
+              <li>E-commerce</li>
+              <li>SaaS</li>
+              <li>Health Insurance</li>
+              <li>Transportations</li>
+            </ol>
+          </div>
         </div>
-        <div class="card card-style3 projects">
-          <h4
-            class="text-accent font-extrabold text-center leading-tight italic text-[44px]"
-          >
-            40+
-          </h4>
-          <p class="text-accent font-light text-sm text-center">projects</p>
+        <div class="card card-style3 projects center-content">
+          <div class="content">
+            <h4
+              class="text-accent font-extrabold text-center leading-tight italic text-[44px]"
+            >
+              40+
+            </h4>
+            <p class="text-accent font-light text-sm text-center">projects</p>
+          </div>
         </div>
-        <div class="card card-style3 quote1"></div>
+        <div class="card card-style3 quote1 relative">
+          <div class="content">
+            <p class="text-accent serif-font italic text-base">
+              “Continuous attention to technical excellence and good design
+              enhances agility.”
+            </p>
+            <span
+              class="absolute bottom-1 right-1 text-xs text-accent font-light opacity-60"
+              >Principles behind the Agile Manifesto</span
+            >
+          </div>
+        </div>
         <div class="card card-style2 technologies">
-          <h4 class="text-foreground opacity-60 font-bold italic text-sm">
-            Technologies
-          </h4>
-          <ol class="text-accent text-sm leading-6 list-disc ml-5">
-            <li>Vue.js</li>
-            <li>Tailwind CSS</li>
-            <li>Nuxt</li>
-            <li>Cypress</li>
-            <li>Jest</li>
-            <li>HTML / CSS</li>
-            <li>Javascript</li>
-          </ol>
+          <div class="content">
+            <h4 class="text-foreground opacity-60 font-bold italic text-sm">
+              Technologies
+            </h4>
+            <ol class="text-accent text-sm leading-6 list-disc ml-5">
+              <li>Vue.js</li>
+              <li>Tailwind CSS</li>
+              <li>Nuxt</li>
+              <li>Cypress</li>
+              <li>Jest</li>
+              <li>HTML / CSS</li>
+              <li>Javascript</li>
+            </ol>
+          </div>
         </div>
-        <div class="card card-style1 front-xp">
+        <div class="card card-style1 front-xp center-content">
+          <div class="content">
+            <h4
+              class="text-darkBackground font-extrabold text-center leading-tight italic text-[44px]"
+            >
+              8+
+              <span class="text-sm font-bold -ml-4">years</span>
+            </h4>
+            <p class="text-darkBackground font-light text-sm text-center">
+              as a frontend dev
+            </p>
+          </div>
+        </div>
+        <div class="card figma-course relative">
+          <div class="overlay"></div>
           <h4
-            class="text-darkBackground font-extrabold text-center leading-tight italic text-[44px]"
+            class="absolute bottom-2 left-2 right-2 text-foreground text-base font-semibold italic"
           >
-            8+
-            <span class="text-sm font-bold -ml-4">years</span>
+            Lectured a Figma Course
           </h4>
-          <p class="text-darkBackground font-light text-sm text-center">
-            as a frontend dev
-          </p>
         </div>
-        <div class="card figma-course"></div>
-        <div class="card card-style1 learning"></div>
-        <div class="card card-style3 quote2"></div>
-        <div class="card card-style2 design-system"></div>
-        <div class="card card-style1 volunteer"></div>
+        <div class="card card-style1 learning center-content">
+          <div class="content">
+            <h4 class="text-darkBackground font-bold text-sm">
+              Always Learning
+            </h4>
+            <p class="text-darkBackground text-xs">
+              Practicing Blender 3D <br />
+              Learning iOS Dev. <br />
+              Reading Philosophy
+            </p>
+          </div>
+        </div>
+        <div class="card card-style3 quote2 relative">
+          <div class="content">
+            <p class="text-accent serif-font italic text-base leading-snug">
+              “Our highest priority is to satisfy the customer through early and
+              continuous delivery of valuable software.”
+            </p>
+            <span
+              class="absolute bottom-1 right-1 text-xs text-accent font-light opacity-60"
+              >Principles behind the Agile Manifesto</span
+            >
+          </div>
+        </div>
+        <div class="card card-style2 design-system center-content">
+          <div class="content">
+            <h4 class="text-accent font-bold text-sm">Design System</h4>
+            <p class="text-accent text-xs">
+              specialist. 10+ design systems built from scratch
+            </p>
+          </div>
+        </div>
+        <div class="card card-style1 volunteer center-content">
+          <div class="content">
+            <h4 class="text-darkBackground font-bold text-sm">
+              Volunteer Work
+            </h4>
+            <p class="text-darkBackground text-xs">
+              Mentoring for startups and students
+            </p>
+          </div>
+        </div>
       </div>
     </section>
   </Container>
 </template>
 
 <style lang="scss">
+.serif-font {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.overlay {
+  // @apply absolute inset-0 bg-gradient-to-b to-darkBackground;
+  @apply absolute inset-0;
+  background: linear-gradient(
+    0deg,
+    rgba(5, 14, 28, 0.85) 14.58%,
+    rgba(5, 14, 28, 0.842873) 17.87%,
+    rgba(5, 14, 28, 0.822447) 20.55%,
+    rgba(5, 14, 28, 0.79016) 22.71%,
+    rgba(5, 14, 28, 0.747446) 24.45%,
+    rgba(5, 14, 28, 0.695741) 25.85%,
+    rgba(5, 14, 28, 0.63648) 27.02%,
+    rgba(5, 14, 28, 0.571099) 28.05%,
+    rgba(5, 14, 28, 0.501034) 29.03%,
+    rgba(5, 14, 28, 0.42772) 30.06%,
+    rgba(5, 14, 28, 0.352593) 31.23%,
+    rgba(5, 14, 28, 0.277087) 32.64%,
+    rgba(5, 14, 28, 0.20264) 34.37%,
+    rgba(5, 14, 28, 0.130686) 36.53%,
+    rgba(5, 14, 28, 0.0626607) 39.21%,
+    rgba(5, 14, 28, 0) 42.5%
+  );
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
 .cards-grid {
   @apply grid gap-4;
   grid-template-columns: repeat(2, 1fr);
@@ -91,6 +186,10 @@
 
   .card {
     @apply rounded-lg p-2;
+
+    &.center-content {
+      @apply flex justify-center items-center;
+    }
 
     &.card-style1 {
       @apply bg-accent;
@@ -130,6 +229,8 @@
 
     &.figma-course {
       grid-area: figma-course;
+      background-image: url("~/assets/images/FigmaCourse.jpg");
+      @apply w-full bg-cover bg-top bg-no-repeat;
     }
 
     &.learning {
