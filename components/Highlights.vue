@@ -8,17 +8,17 @@
             class="text-darkBackground font-extrabold text-center leading-tight italic text-[44px]"
           >
             15+
-            <span class="text-sm font-bold -ml-1">years</span>
+            <span class="text-sm font-bold -ml-4">years</span>
           </h4>
           <p class="text-darkBackground font-light text-sm text-center">
             as a UX/UI Designer
           </p>
         </div>
         <div class="card card-style2 industries">
-          <h4 class="text-darkBackground font-extrabold italic text-xs">
+          <h4 class="text-foreground opacity-60 font-bold italic text-sm">
             Top Industries
           </h4>
-          <ol class="text-accent text-sm leading-6 list-disc ml-4">
+          <ol class="text-accent text-sm leading-6 list-disc ml-5">
             <li>Food Delivery</li>
             <li>Telecom</li>
             <li>Real Estate</li>
@@ -38,10 +38,10 @@
         </div>
         <div class="card card-style3 quote1"></div>
         <div class="card card-style2 technologies">
-          <h4 class="text-darkBackground font-extrabold italic text-xs">
+          <h4 class="text-foreground opacity-60 font-bold italic text-sm">
             Technologies
           </h4>
-          <ol class="text-accent text-sm leading-6 list-disc ml-4">
+          <ol class="text-accent text-sm leading-6 list-disc ml-5">
             <li>Vue.js</li>
             <li>Tailwind CSS</li>
             <li>Nuxt</li>
@@ -56,7 +56,7 @@
             class="text-darkBackground font-extrabold text-center leading-tight italic text-[44px]"
           >
             8+
-            <span class="text-sm font-bold -ml-1">years</span>
+            <span class="text-sm font-bold -ml-4">years</span>
           </h4>
           <p class="text-darkBackground font-light text-sm text-center">
             as a frontend dev
