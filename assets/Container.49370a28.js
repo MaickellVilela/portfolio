@@ -1,0 +1,1 @@
+import{O as o,o as t,J as n,P as s}from"./entry.eb25ded2.js";const c={},r={class:"container"};function _(e,a){return t(),n("div",r,[s(e.$slots,"default")])}const d=o(c,[["render",_]]);export{d as default};
