@@ -8,7 +8,7 @@
             <h4
               class="text-darkBackground font-extrabold text-center leading-tight italic text-[44px] md:text-[52px]"
             >
-              15+
+              {{ UXDesignExperience }}+
               <span class="text-sm md:text-base font-bold -ml-4">years</span>
             </h4>
             <p
@@ -85,7 +85,7 @@
             <h4
               class="text-darkBackground font-extrabold text-center leading-tight italic text-[44px] md:text-[52px]"
             >
-              8+
+              {{ FrontendDevExperience }}+
               <span class="text-sm md:text-base font-bold -ml-4">years</span>
             </h4>
             <p
@@ -153,6 +153,10 @@
     </section>
   </Container>
 </template>
+
+<script setup lang="ts">
+const { UXDesignExperience, FrontendDevExperience } = yearsOfExperience();
+</script>
 
 <style lang="scss">
 .serif-font {
