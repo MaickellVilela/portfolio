@@ -5,23 +5,67 @@
       <div class="cards-grid">
         <div class="card card-style1 design-xp">
           <h4
-            class="text-darkBackground font-bold text-center leading-tight italic text-[44px]"
+            class="text-darkBackground font-extrabold text-center leading-tight italic text-[44px]"
           >
-            15+<span class="text-sm -ml-1">years</span>
+            15+
+            <span class="text-sm font-bold -ml-1">years</span>
           </h4>
           <p class="text-darkBackground font-light text-sm text-center">
             as a UX/UI Designer
           </p>
         </div>
-        <div class="card card-style2 industries"></div>
-        <div class="card card-style3 projects"></div>
-        <div class="card card-style2 quote1"></div>
-        <div class="card card-style2 technologies"></div>
-        <div class="card card-style1 front-xp"></div>
+        <div class="card card-style2 industries">
+          <h4 class="text-darkBackground font-extrabold italic text-xs">
+            Top Industries
+          </h4>
+          <ol class="text-accent text-sm leading-6 list-disc ml-4">
+            <li>Food Delivery</li>
+            <li>Telecom</li>
+            <li>Real Estate</li>
+            <li>E-commerce</li>
+            <li>SaaS</li>
+            <li>Health Insurance</li>
+            <li>Transportations</li>
+          </ol>
+        </div>
+        <div class="card card-style3 projects">
+          <h4
+            class="text-accent font-extrabold text-center leading-tight italic text-[44px]"
+          >
+            40+
+          </h4>
+          <p class="text-accent font-light text-sm text-center">projects</p>
+        </div>
+        <div class="card card-style3 quote1"></div>
+        <div class="card card-style2 technologies">
+          <h4 class="text-darkBackground font-extrabold italic text-xs">
+            Technologies
+          </h4>
+          <ol class="text-accent text-sm leading-6 list-disc ml-4">
+            <li>Vue.js</li>
+            <li>Tailwind CSS</li>
+            <li>Nuxt</li>
+            <li>Cypress</li>
+            <li>Jest</li>
+            <li>HTML / CSS</li>
+            <li>Javascript</li>
+          </ol>
+        </div>
+        <div class="card card-style1 front-xp">
+          <h4
+            class="text-darkBackground font-extrabold text-center leading-tight italic text-[44px]"
+          >
+            8+
+            <span class="text-sm font-bold -ml-1">years</span>
+          </h4>
+          <p class="text-darkBackground font-light text-sm text-center">
+            as a frontend dev
+          </p>
+        </div>
         <div class="card figma-course"></div>
         <div class="card card-style1 learning"></div>
-        <div class="card card-style2 quote2"></div>
-        <div class="card card-style3 design-system"></div>
+        <div class="card card-style3 quote2"></div>
+        <div class="card card-style2 design-system"></div>
         <div class="card card-style1 volunteer"></div>
       </div>
     </section>
