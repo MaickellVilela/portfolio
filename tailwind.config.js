@@ -5,7 +5,7 @@ module.exports = {
     colors: {
       foreground: "#FFF",
       darkBackground: "#050E1C",
-      accent: "#52FF00",
+      accent: "#95ff00",
     },
     fontSize: {
       ...defaultTheme.fontSize,
