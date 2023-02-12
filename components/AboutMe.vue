@@ -10,12 +10,14 @@
         <div class="personal-bio">
           <h2 class="name text-4xl font-bold mb-2 md:mb-3">Maickell Vilela</h2>
           <p class="title text-accent text-sm">
-            <span>Senior UX/UI Designer</span>
+            <span class="block md:inline-block mb-2 md:mb-0"
+              >Senior UX/UI Designer</span
+            >
             <span class="hidden md:inline-block">&nbsp;|&nbsp;</span>
-            <br class="md:hidden inline-block" />
-            <span>Frontend Developer</span>
+            <span class="block md:inline-block mb-2 md:mb-0"
+              >Frontend Developer</span
+            >
             <span class="hidden md:inline-block">&nbsp;|&nbsp;</span>
-            <br class="md:hidden inline-block" />
             <span>Design Systems specialist</span>
           </p>
           <BioText class="hidden md:block" />
