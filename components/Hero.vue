@@ -47,6 +47,10 @@
         </CustomLink>
       </div>
     </Container>
+    <div class="scroll-indicator">
+      scroll
+      <div class="scroll-arrow"></div>
+    </div>
   </section>
 </template>
 
@@ -59,8 +63,17 @@
 .hero-backgorund {
   // TODO: Optimize image;
   background-image: url("~/assets/images/background.png");
-  @apply bg-cover bg-center bg-no-repeat mix-blend-screen w-full flex justify-center items-center;
+  @apply relative bg-cover bg-center bg-no-repeat mix-blend-screen w-full flex justify-center items-center;
   min-height: 100vh;
   min-height: -webkit-fill-available;
+
+  .scroll-indicator {
+    @apply absolute bottom-0 left-1/2 -translate-x-1/2 pb-8 md:pb-16 text-foreground text-sm text-center font-light;
+
+    .scroll-arrow {
+      background-image: url("~/assets/images/scroll-arrow.svg");
+      @apply w-[50px] h-4;
+    }
+  }
 }
 </style>
