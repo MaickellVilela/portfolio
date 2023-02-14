@@ -17,10 +17,9 @@ module.exports = {
       // or have default horizontal padding
       padding: "2rem",
 
-      // default breakpoints but with 40px removed
       screens: {
-        sm: "836px",
-        DEFAULT: "836px",
+        sm: "900px",
+        DEFAULT: "900px",
       },
     },
   },

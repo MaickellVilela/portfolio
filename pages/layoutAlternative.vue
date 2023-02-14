@@ -2,6 +2,6 @@
   <main>
     <Hero />
     <AboutMe />
-    <HighlightsV2 />
+    <Highlights />
   </main>
 </template>
