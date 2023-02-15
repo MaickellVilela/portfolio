@@ -1,1 +1,0 @@
-import{y as n}from"./entry.f8ce9f81.js";function s(){const e=new Date().getFullYear(),t=n(()=>e-2008),r=n(()=>e-2015),a=n(()=>e-2016);return{UXDesignExperience:t,FrontendDevExperience:r,FigmaExperience:a}}export{s as y};
