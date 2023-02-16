@@ -9,9 +9,9 @@ export default {
   data: function () {
     return {
       words: [
-        // "Product Designer",
-        // "UX Designer",
-        // "CSS Specialist",
+        "Product Designer",
+        "UX Designer",
+        "CSS Specialist",
         "UI Engineer",
         "Design System Manager",
       ], // array of words to be typed
