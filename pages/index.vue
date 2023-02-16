@@ -7,13 +7,15 @@
     <div class="box-container mx-auto">
       <div class="my-box" ref="boxRef">asfd</div>
     </div>
+
+    <div class="h-32"></div>
   </main>
 </template>
 
 <script setup lang="ts">
 const boxRef = ref(null);
 
-const maxRotation = 10;
+const maxRotation = 15;
 
 // function to get the mouse position relative to the box
 const getMousePos = (e) => {
@@ -125,18 +127,20 @@ onMounted(() => {
 
 <style scoped>
 .box-container {
-  width: 600px;
-  height: 600px;
+  width: 300px;
+  height: 100px;
+
+  margin-bottom: 300px;
 
   perspective: 800px;
   transform-style: preserve-3d;
 
-  transition: transform 0.3s;
+  /* transition: transform 0.3s; */
 }
 
 .my-box {
-  --box-color: rgb(2, 22, 2);
-  --light-color: rgb(184, 255, 4);
+  --box-color: rgba(2, 22, 2, 0);
+  --light-color: rgba(184, 255, 4, 6);
 
   --x: 0;
   --y: 0;
@@ -144,20 +148,30 @@ onMounted(() => {
   --sheenX: 10deg;
   --sheenY: 10deg;
 
-  @apply absolute inset-0;
+  @apply absolute inset-0 p-8 rounded-lg;
   backface-visibility: hidden;
 
-  /* background: radial-gradient(circle, white 0% red 100%); */
+  border: 1px solid #fff;
+  text-align: center;
+
   background: radial-gradient(
     circle at var(--x) var(--y),
     var(--light-color),
     var(--box-color)
   );
-  /* background-position: var(--x) var(--y); */
+
   background-repeat: no-repeat;
 
-  /* transition: transform 0.5s ease-in-out; */
-
   transform: rotateY(calc(var(--sheenY))) rotateX(calc(var(--sheenX)));
+
+  transition: background-color 1s ease-in-out;
+  &:hover {
+    /* In CSS, you can't transition a background gradient. 
+    It jumps from one gradient to the other immediately, 
+    with no smooth transition between the two. He documents 
+    a clever tactic of positioning a pseudo element covering 
+    the element with a different background and transitioning 
+    the opacity of that pseudo element. */
+  }
 }
 </style>
