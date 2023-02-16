@@ -4,8 +4,13 @@
     <AboutMe />
     <HighlightsV2 />
 
-    <div class="box-container mx-auto">
-      <div class="my-box" ref="boxRef">asfd</div>
+    <div class="box-container mx-auto mt-32">
+      <div class="my-box" ref="boxRef">
+        <p>Device orientation:</p>
+        <p>x: {{ x }}</p>
+        <p>y: {{ y }}</p>
+        <p>z: {{ z }}</p>
+      </div>
     </div>
 
     <div class="h-32"></div>
@@ -16,6 +21,16 @@
 const boxRef = ref(null);
 
 const maxRotation = 15;
+
+let x = ref(0);
+let y = ref(0);
+let z = ref(0);
+
+const updateXYZ = (event: DeviceOrientationEvent) => {
+  x.value = event.alpha!;
+  y.value = event.beta!;
+  z.value = event.gamma!;
+};
 
 // function to get the mouse position relative to the box
 const getMousePos = (e) => {
@@ -43,7 +58,6 @@ function mapValueToRange(value) {
   return scaledValue;
 }
 
-//fucntion to set the sheen position to the x any y css variables
 const setSheenPos = (e) => {
   const { x, y } = getMousePos(e);
 
@@ -118,17 +132,23 @@ const handleMouseLeave = () => {
   });
 };
 
+const handleOrientation = () => {
+  window.addEventListener("deviceorientation", updateXYZ);
+};
+
 onMounted(() => {
   initSheen();
   handleMouseEnter();
   handleMouseLeave();
+
+  handleOrientation();
 });
 </script>
 
 <style scoped>
 .box-container {
   width: 300px;
-  height: 100px;
+  height: 300px;
 
   margin-bottom: 300px;
 
