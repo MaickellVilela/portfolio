@@ -30,6 +30,8 @@ const updateXYZ = (event: DeviceOrientationEvent) => {
   x.value = event.alpha!;
   y.value = event.beta!;
   z.value = event.gamma!;
+
+  console.log(`x: ${x.value}, y: ${y.value}, z: ${z.value}`);
 };
 
 // function to get the mouse position relative to the box
@@ -132,16 +134,10 @@ const handleMouseLeave = () => {
   });
 };
 
-const handleOrientation = () => {
-  window.addEventListener("deviceorientation", updateXYZ);
-};
-
 onMounted(() => {
   initSheen();
   handleMouseEnter();
   handleMouseLeave();
-
-  handleOrientation();
 });
 </script>
 
