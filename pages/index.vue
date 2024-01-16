@@ -5,8 +5,6 @@ import { ParalaxContainer } from '~~/.nuxt/components';
     <Hero />
     <AboutMe />
     <HighlightsV2 />
-
-    <ParallaxContainer />
   </main>
 </template>
 
