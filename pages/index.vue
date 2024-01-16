@@ -5,11 +5,7 @@
     <HighlightsV2 />
 
     <div class="box-container mx-auto mt-32">
-      <div class="my-box" ref="boxRef">
-        <p>Device orientation:</p>
-        <p>x: {{ x }}</p>
-        <p>y: {{ y }}</p>
-        <p>z: {{ z }}</p>
+      <div class="my-box p-8" ref="boxRef">
       </div>
     </div>
 
@@ -20,19 +16,7 @@
 <script setup lang="ts">
 const boxRef = ref(null);
 
-const maxRotation = 15;
-
-let x = ref(0);
-let y = ref(0);
-let z = ref(0);
-
-const updateXYZ = (event: DeviceOrientationEvent) => {
-  x.value = event.alpha!;
-  y.value = event.beta!;
-  z.value = event.gamma!;
-
-  console.log(`x: ${x.value}, y: ${y.value}, z: ${z.value}`);
-};
+const maxRotation = 35;
 
 // function to get the mouse position relative to the box
 const getMousePos = (e) => {
@@ -64,10 +48,10 @@ const setSheenPos = (e) => {
   const { x, y } = getMousePos(e);
 
   const rect = boxRef.value.getBoundingClientRect();
-  const xPerc = percentage(x, rect.width);
-  const yPerc = percentage(y, rect.height);
+  const xPerc = percentage(y, rect.width);
+  const yPerc = percentage(x, rect.height);
 
-  const xRotation = maxRotation * mapValueToRange(xPerc);
+  const xRotation = maxRotation * mapValueToRange(100 - xPerc);
   const yRotation = maxRotation * mapValueToRange(yPerc);
 
   boxRef.value.style.setProperty("--sheenX", `${xRotation}deg`);
@@ -180,7 +164,9 @@ onMounted(() => {
 
   transform: rotateY(calc(var(--sheenY))) rotateX(calc(var(--sheenX)));
 
-  transition: background-color 1s ease-in-out;
+  /* transition: background-color 1s ease-in-out; */
+  transition: transform 0.1s linear, background-color 1s ease-in-out;
+
   &:hover {
     /* In CSS, you can't transition a background gradient. 
     It jumps from one gradient to the other immediately, 
