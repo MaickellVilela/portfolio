@@ -158,7 +158,7 @@
 const { UXDesignExperience, FrontendDevExperience } = yearsOfExperience();
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .serif-font {
   font-family: "Times New Roman", Times, serif;
 }
