@@ -1,19 +1,19 @@
 <template>
   <div class="bio text-base font-light mt-4">
     <p class="mb-2">
-      I'm a UX/UI designer with over {{ UXDesignExperience }} years of
-      experience in creating enterprise-level software interfaces and user
-      experiences.
+      I'm an iOS developer and frontend engineer, currently building WRKTS — an iOS app designed to be a 
+      companion for Apple Watch's Workouts app. I work with Swift, SwiftUI, SwiftData, HealthKit,
+      WorkoutKit, and CloudKit to create seamless mobile experiences in Apple's ecosystem.
     </p>
     <p class="mb-2">
-      My expertise includes designing for e-commerce, leading multidisciplinary
-      design teams, and utilizing user-centric design based on research and data
-      analysis.
+      With over {{ UXDesignExperience }} years of experience in UX/UI design and frontend
+      development, I specialize in crafting enterprise-level software interfaces that are
+      intuitive, accessible, and performance-optimized.
     </p>
     <p class="mb-2">
-      My skills include UX design, UI for mobile and desktop, design systems,
-      HTML/CSS/JS, and more. I've worked extensively in the telecom and real
-      estate industries and am now making a transition to UI engineering.
+      My skill set includes iOS engineering with Swift, UI/UX for mobile and desktop software,
+      design systems, and frontend technologies like HTML, CSS, JavaScript, Vue.js,
+      and Nuxt.js. I bridge design and development to deliver high-quality digital experiences.
     </p>
   </div>
 </template>

@@ -9,6 +9,7 @@ export default {
   data: function () {
     return {
       words: [
+        "iOS Developer",
         "Product Designer",
         "UX Designer",
         "CSS Specialist",
