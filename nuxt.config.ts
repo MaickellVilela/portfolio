@@ -110,6 +110,8 @@ export default defineNuxtConfig({
       ],
     },
   },
+
   ssr: false,
   modules: ["@nuxtjs/tailwindcss", "@vueuse/nuxt", "@nuxt/content"],
+  compatibilityDate: "2025-02-20",
 });
