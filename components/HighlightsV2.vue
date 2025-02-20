@@ -1,5 +1,84 @@
 <template>
   <Container>
+
+    <section class="ios-section md:pb-32 pb-16 md:flex gap-4 md:gap-8 md:flex-row-reverse">
+      <div class="cards-grid basis-1/2">
+
+        <!-- App Logo -->
+        <div class="card card-style2 app-logo center-content">
+          <div class="content flex flex-col gap-6">
+
+            <div class="logo-container">
+              <img
+                src="@/assets/images/WRKTS-icon.png"
+                alt="WRKTS Logo"
+                class="h-fill w-1/2 mx-auto mb-2 rounded-xl"
+              />
+              <p
+                class="font-semibold text-sm md:text-base md:leading-none whitespace-nowrap text-center"
+              >
+                WRKTS
+              </p>
+            </div>
+
+            <a href="https://testflight.apple.com/join/UWJGs44s">
+              <img src="@/assets/images/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="App Store" class="w-full mx-auto mb-2" />
+            </a>
+
+            <hr class="opacity-30">
+
+            <a
+              href="#page"
+              class="text-accent block font-semibold text-sm md:text-base md:leading-none whitespace-nowrap text-center"
+            >
+              Know more
+            </a>
+          </div>
+        </div>
+
+        <div class="card card-style2 technologies">
+          <div class="content">
+            <h4 class="text-foreground opacity-60 font-bold italic text-sm">
+              Technologies
+            </h4>
+            <ol
+              class="text-accent text-sm md:text-base leading-6 md:leading-7 md:mt-2 list-disc ml-5"
+            >
+              <li>Swift</li>
+              <li>SwiftUI</li>
+              <li>SwiftData</li>
+              <li>HealthKit</li>
+              <li>WorkoutKit</li>
+              <li>CloudKit</li>
+              <li>SwiftTest</li>
+              <li>XCTest</li>
+              <li>UITest</li>
+            </ol>
+          </div>
+        </div>
+
+      </div>
+      <div class="copy-container basis-1/2 mt-8 md:mt-0">
+        <h3 class="text-2xl font-bold mb-4 md:mb-6">
+          iOS App Development
+        </h3>
+        <div class="">
+          <p class="mb-2">
+                WRKTS is a native iOS app that lets users create, customize, and manage Apple Watch 
+                workouts directly from their iPhone. It supports structured training with goals like 
+                time, distance, calories, and target pace, plus advanced interval workouts with 
+                seamless transitions between work and recovery phases.
+          </p>
+          <p class="mb-2">
+                Users can design swimming workouts, duplicate and modify templates, preview workouts, 
+                and organize their training library. Future updates will bring smart scheduling, 
+                AI-powered workout planning, and progress tracking—making WRKTS the ultimate 
+                Apple Watch workout companion.
+          </p>
+        </div>
+      </div>
+    </section>
+
     <section class="design-section md:pb-32 pb-16 md:flex gap-4 md:gap-8">
       <div class="cards-grid basis-1/2">
         <div class="card card-style1 design-xp center-content">
@@ -345,6 +424,24 @@ const { UXDesignExperience, FrontendDevExperience, FigmaExperience } =
         @apply p-4;
         grid-area: tech-logos;
       }
+    }
+  }
+}
+
+.ios-section {
+  .cards-grid {
+    grid-template-areas:
+      "app-logo technologies"
+      "app-logo technologies";
+  }
+
+  .card {
+    &.app-logo {
+      grid-area: app-logo;
+    }
+
+    &.technologies {
+      grid-area: technologies;
     }
   }
 }
